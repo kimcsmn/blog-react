@@ -33,7 +33,7 @@ class Home extends Component {
             <h3 className="post-title">{post.title}</h3>
           </Link>
             <p className="post-body">{post.body}</p>
-            {post.id}
+
           </div>
         )
       })

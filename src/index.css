@@ -19,7 +19,7 @@ body {
 :root {
   --bg-dark: #020003;
   --bg-light: #eee4db;
-  --accent-green: #698e6b;
+  --accent-blue: #658f97;
 }
 
 nav li {
@@ -32,7 +32,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: var(--accent-green);
+  color: var(--accent-blue);
 }
 
 nav ul {
@@ -60,7 +60,7 @@ nav ul {
 .post-title {
   font-size: 1.5rem;
   text-align: center;
-  color: var(--accent-green);
+  color: var(--accent-blue);
   text-transform: uppercase;
   padding-bottom: 1em;
   border-bottom: solid var(--bg-dark) 2px;
@@ -72,5 +72,5 @@ nav ul {
 }
 
 h3 {
-  color: var(--accent-green);
+  color: var(--accent-blue);
 }
