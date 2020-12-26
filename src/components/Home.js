@@ -11,7 +11,6 @@ class Home extends Component {
     // when react mount to the DOM, fetch this data
     axios.get('https://jsonplaceholder.typicode.com/posts')
       .then(res => {
-        console.log(res)
         this.setState({
           posts: res.data.slice(0,10)
         })
@@ -24,9 +23,9 @@ class Home extends Component {
     const postList = posts.length ? (
       posts.map(post => {
         return(
-          <div className="todo">
-            <h3 className="todo-title">{post.title}</h3>
-            <p className="todo-body">{post.body}</p>
+          <div className="post" key={post.id}>
+            <h3 className="post-title">{post.title}</h3>
+            <p className="post-body">{post.body}</p>
           </div>
         )
       })
