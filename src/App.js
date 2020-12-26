@@ -1,24 +1,22 @@
 import React, { Component } from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import { BrowserRouter, Route} from 'react-router-dom'
 import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/About'
 
 class App extends Component {
 
-// https://jsonplaceholder.typicode.com/posts
-
   render(){
     return(
-      <div>
-        <BrowserRouter>
+      <BrowserRouter>
+        <div className="App">
           <Navbar />
-          <Route exact path="/">{Home}</Route>
-          <Route path="/about">{About}</Route>
-          <Route path="/contact">{Contact}</Route>
-        </BrowserRouter>
-      </div>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </div>
+      </BrowserRouter>
     )
   }
 }

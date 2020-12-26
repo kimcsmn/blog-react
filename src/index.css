@@ -7,18 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-.red-text {
-  color: red;
+nav li {
+  list-style: none;
 }
 
-.blue-text {
-  color: blue;
+.App {
+  padding: 5em;
 }
 
-.green-text {
-  color: green;
+.todo {
+  border: dotted blue 2px;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.todo-title {
+  font-size: 2rem;
+  text-align: center;
+  color: navy;
+  text-transform: uppercase;
 }
